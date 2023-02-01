@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="564.0" prefWidth="948.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <left>
+      <VBox prefHeight="384.0" prefWidth="194.0" BorderPane.alignment="CENTER" />
+   </left>
+   <top>
+      <HBox alignment="CENTER_LEFT" prefHeight="52.0" prefWidth="948.0" style="-fx-background-color: #6F6AF8;" BorderPane.alignment="CENTER">
+         <children>
+            <Label prefHeight="35.0" prefWidth="193.0" text="Xfest" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+            </Label>
+            <HBox alignment="CENTER" maxHeight="-Infinity" prefHeight="40.0" prefWidth="557.0" spacing="8.0">
+               <children>
+                  <TextField fx:id="inpPesquisa" prefHeight="27.0" prefWidth="538.0" promptText="Pesquia" style="-fx-background-color: white; -fx-border-color: white; -fx-background-radius: 50 rm;" />
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/search.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+            <Pane prefHeight="52.0" prefWidth="34.0" />
+            <MenuButton mnemonicParsing="false" prefHeight="26.0" prefWidth="122.0" style="-fx-background-color: white;" text="Criar">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Servico" />
+                <MenuItem mnemonicParsing="false" text="Ordem de Servico" />
+              </items>
+            </MenuButton>
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <TabPane prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+        <tabs>
+          <Tab text="Serviços">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ScrollPane layoutY="3.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="3.0">
+                           <content>
+                              <VBox id="vboxServico" fx:id="Teste" prefHeight="565.0" prefWidth="524.0" style="-fx-background-color: white;" />
+                           </content>
+                        </ScrollPane>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Ordens de Serviços">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: white;">
+                     <children>
+                        <VBox id="vboxOrdemServico" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+         <padding>
+            <Insets top="16.0" />
+         </padding>
+      </TabPane>
+   </center>
+   <right>
+      <VBox prefHeight="522.0" prefWidth="223.0" BorderPane.alignment="CENTER" />
+   </right>
+</BorderPane>

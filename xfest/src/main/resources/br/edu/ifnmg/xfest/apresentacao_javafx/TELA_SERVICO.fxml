@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="717.0" prefWidth="1205.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <left>
+      <VBox prefHeight="666.0" prefWidth="263.0" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <padding>
+            <Insets left="5.0" top="15.0" />
+         </padding></VBox>
+   </left>
+   <top>
+      <HBox alignment="CENTER_LEFT" prefHeight="52.0" prefWidth="948.0" style="-fx-background-color: #6F6AF8;" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" style="-fx-background-color: #6F6AF8;" text="&lt;" textFill="WHITE">
+               <font>
+                  <Font name="Consolas" size="22.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Label prefHeight="35.0" prefWidth="199.0" text="Xfest" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+            </Label>
+            <HBox alignment="CENTER" maxHeight="-Infinity" prefHeight="40.0" prefWidth="557.0" spacing="8.0">
+               <children>
+                  <Label prefHeight="28.0" prefWidth="570.0" text="SERVIÇO" textAlignment="RIGHT" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="19.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <Pane prefHeight="52.0" prefWidth="34.0" />
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <padding>
+            <Insets left="20.0" />
+         </padding>
+      </HBox>
+   </top>
+   <right>
+      <VBox prefHeight="666.0" prefWidth="270.0" BorderPane.alignment="CENTER">
+         <padding>
+            <Insets left="15.0" top="30.0" />
+         </padding></VBox>
+   </right>
+   <center>
+      <ScrollPane prefHeight="666.0" prefWidth="796.0" BorderPane.alignment="CENTER">
+         <content>
+            <AnchorPane prefHeight="890.0" prefWidth="662.0" style="-fx-background-color: white;">
+               <children>
+                  <ImageView fitHeight="164.0" fitWidth="660.0" layoutX="-1.0" layoutY="-18.0" nodeOrientation="INHERIT" pickOnBounds="true" smooth="false" AnchorPane.bottomAnchor="726.0" AnchorPane.rightAnchor="183.0" AnchorPane.topAnchor="0.0">
+                     <image>
+                        <Image url="@servicos.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="lblTitulo" layoutX="14.0" layoutY="176.0" text="Título">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="361.0" text="Data" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="400.4" AnchorPane.topAnchor="360.0">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblDescricao" layoutX="16.0" layoutY="202.0" prefHeight="136.0" prefWidth="627.0" text="LabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLaLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelbelLabelLabLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLaLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelbelLabelLabLabelLabelLabelLabelLabelLabelLabelLabelLabelLaLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLaLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelbelLabelLabLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelelLabelLabelbelLabelLabelelLabelLabel" wrapText="true" />
+                  <Label fx:id="lblDataCriacaoServico" layoutX="14.0" layoutY="381.0" text="17/01/2023" />
+                  <Label fx:id="lblIdOS" layoutX="567.0" layoutY="176.0" prefHeight="20.0" prefWidth="19.0" text="ID " AnchorPane.bottomAnchor="694.0" AnchorPane.leftAnchor="567.0" AnchorPane.rightAnchor="206.0" AnchorPane.topAnchor="176.0">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblTipoServicos" layoutX="15.0" layoutY="410.0" prefHeight="20.0" prefWidth="383.0" text="Tipo de Serviços" AnchorPane.bottomAnchor="460.4" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="387.0">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="121.0" layoutY="359.0" text="Contato">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblNumContato" layoutX="121.0" layoutY="380.0" text="(**) ***********" />
+                  <Label layoutX="255.0" layoutY="360.0" text="Preço">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblPrecoServico" layoutX="255.0" layoutY="380.0" text="R$ 1.000,00" />
+                  <Button fx:id="btnCancelarOS" layoutX="14.0" layoutY="504.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="171.0" style="-fx-background-color: red;" text="Cancelar" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="btnCancelarOS1" layoutX="207.0" layoutY="504.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="171.0" style="-fx-background-color: #8CC919;" text="Editar" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Label fx:id="lblTipoServico" layoutX="20.0" layoutY="436.0" prefHeight="18.0" prefWidth="100.0" text="Som" />
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+   </center>
+</BorderPane>

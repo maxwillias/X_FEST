@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="780.0" prefWidth="1205.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <left>
+      <VBox prefHeight="666.0" prefWidth="263.0" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <padding>
+            <Insets left="5.0" top="15.0" />
+         </padding></VBox>
+   </left>
+   <top>
+      <HBox alignment="CENTER_LEFT" prefHeight="52.0" prefWidth="948.0" style="-fx-background-color: #6F6AF8;" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" style="-fx-background-color: #6F6AF8;" text="&lt;" textFill="WHITE">
+               <font>
+                  <Font name="Consolas" size="22.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Label prefHeight="35.0" prefWidth="199.0" text="Xfest" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+            </Label>
+            <HBox alignment="CENTER" maxHeight="-Infinity" prefHeight="40.0" prefWidth="557.0" spacing="8.0" />
+            <Pane prefHeight="52.0" prefWidth="34.0" />
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <padding>
+            <Insets left="20.0" />
+         </padding>
+      </HBox>
+   </top>
+   <right>
+      <VBox prefHeight="666.0" prefWidth="270.0" BorderPane.alignment="CENTER">
+         <padding>
+            <Insets left="15.0" top="30.0" />
+         </padding></VBox>
+   </right>
+   <center>
+      <ScrollPane prefHeight="666.0" prefWidth="796.0" BorderPane.alignment="CENTER">
+         <content>
+            <AnchorPane prefHeight="989.0" prefWidth="767.0" style="-fx-background-color: white;">
+               <children>
+                  <Label layoutX="21.0" layoutY="185.0" text="Nome Ordem de Serviço">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btnCancelarOS" layoutX="291.0" layoutY="935.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="171.0" style="-fx-background-color: red;" text="Cancelar" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="btnSalvarOS" layoutX="484.0" layoutY="935.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="171.0" style="-fx-background-color: #8CC919;" text="Salvar" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Pane layoutX="-1.0" prefHeight="124.0" prefWidth="787.0" style="-fx-background-color: #F9D8B2;">
+                     <children>
+                        <Label layoutX="14.0" layoutY="48.0" prefHeight="28.0" prefWidth="570.0" text="NOVA ORDEM SERVIÇO" textAlignment="RIGHT" textFill="#404040">
+                           <font>
+                              <Font name="System Bold" size="27.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <TextField fx:id="inpNomeOS" layoutX="21.0" layoutY="205.0" prefHeight="26.0" prefWidth="623.0" />
+                  <Label layoutX="21.0" layoutY="243.0" text="Descrição">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="21.0" layoutY="303.0" text="Tamanho do Evento">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="inpDescricaoOS" layoutX="21.0" layoutY="263.0" prefHeight="26.0" prefWidth="623.0" />
+                  <TextField fx:id="inpTamanhoEvento" layoutX="21.0" layoutY="323.0" prefHeight="26.0" prefWidth="623.0" />
+                  <Label layoutX="21.0" layoutY="362.0" text="Número Contato">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="inpContatoOS" layoutX="21.0" layoutY="382.0" prefHeight="26.0" prefWidth="623.0" />
+                  <Label layoutX="21.0" layoutY="422.0" text="Data Evento">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <DatePicker fx:id="dataDataOS" layoutX="21.0" layoutY="443.0" />
+                  <CheckBox fx:id="chkSom" layoutX="33.0" layoutY="773.0" mnemonicParsing="false" text="Som" />
+                  <Label layoutX="20.0" layoutY="723.0" prefHeight="20.0" prefWidth="618.0" style="-fx-background-color: #F9D8B2;" text="Serviços Necessários" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <padding>
+                        <Insets left="15.0" />
+                     </padding>
+                  </Label>
+                  <CheckBox fx:id="chkIluminacao" layoutX="33.0" layoutY="800.0" mnemonicParsing="false" text="Iluminação" />
+                  <CheckBox fx:id="chkLimpeza" layoutX="287.0" layoutY="782.0" mnemonicParsing="false" text="Limpeza" />
+                  <CheckBox fx:id="chkGarcom" layoutX="287.0" layoutY="809.0" mnemonicParsing="false" text="Garçons" />
+                  <CheckBox fx:id="chkDecoracao" layoutX="32.0" layoutY="827.0" mnemonicParsing="false" text="Decoração" />
+                  <CheckBox fx:id="chkBuffet" layoutX="31.0" layoutY="851.0" mnemonicParsing="false" text="Buffet" />
+                  <CheckBox fx:id="chkLocal" layoutX="287.0" layoutY="842.0" mnemonicParsing="false" text="Local" />
+                  <Pane layoutX="15.0" layoutY="478.0" prefHeight="237.0" prefWidth="627.0">
+                     <children>
+                        <TextField fx:id="inpRuaOS1" layoutX="10.0" layoutY="66.0" prefHeight="26.0" prefWidth="406.0" />
+                        <Label layoutX="14.0" layoutY="40.0" text="Rua">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="inpBairroOS1" layoutX="10.0" layoutY="129.0" prefHeight="26.0" prefWidth="406.0" />
+                        <Label layoutX="17.0" layoutY="96.0" text="Bairro">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="inpCidadeOS1" layoutX="10.0" layoutY="186.0" prefHeight="26.0" prefWidth="406.0" />
+                        <Label layoutX="14.0" layoutY="166.0" text="Cidade">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="inpNumeroLocalOS1" layoutX="463.0" layoutY="63.0" prefHeight="26.0" prefWidth="90.0" />
+                        <Label layoutX="463.0" layoutY="40.0" text="Número">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="inpEstadoOS1" layoutX="463.0" layoutY="126.0" prefHeight="26.0" prefWidth="90.0" />
+                        <Label layoutX="463.0" layoutY="103.0" text="UF">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="1.0" layoutY="4.0" prefHeight="20.0" prefWidth="626.0" style="-fx-background-color: #F9D8B2;" text="Endereço Evento" textAlignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <padding>
+                              <Insets left="15.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <CheckBox fx:id="chkSom1" layoutX="240.0" layoutY="447.0" mnemonicParsing="false" text="Possuo Local do Evento" />
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+   </center>
+</BorderPane>
