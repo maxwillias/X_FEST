@@ -20,9 +20,9 @@
             <VBox alignment="CENTER" prefHeight="201.0" prefWidth="300.0">
                <children>
                   <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" VBox.vgrow="ALWAYS">
-                     <image>
-                        <Image url="@../logo/logoXFest_Balao/logocinza/default_transparent_765x625.png" />
-                     </image>
+                     <!-- <image>
+                        <Image url="" />
+                     </image> -->
                   </ImageView>
                </children>
             </VBox>
