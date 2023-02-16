@@ -37,7 +37,7 @@
                   <TextField fx:id="inpPesquisa" prefHeight="27.0" prefWidth="538.0" promptText="Pesquia" style="-fx-background-color: white; -fx-border-color: white; -fx-background-radius: 50 rm;" />
                   <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@icons/search.png" />
+                        <Image url="@../icons/search.png" />
                      </image>
                   </ImageView>
                </children>

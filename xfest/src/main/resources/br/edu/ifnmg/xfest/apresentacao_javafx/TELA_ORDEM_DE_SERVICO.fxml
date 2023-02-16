@@ -85,7 +85,7 @@
                <children>
                   <ImageView fitHeight="164.0" fitWidth="660.0" layoutX="-1.0" layoutY="-18.0" nodeOrientation="INHERIT" pickOnBounds="true" smooth="false" AnchorPane.bottomAnchor="726.0" AnchorPane.leftAnchor="-1.0" AnchorPane.rightAnchor="183.0" AnchorPane.topAnchor="0.0">
                      <image>
-                        <Image url="@imgOrdemServicos.jpg" />
+                        <Image url="@../imagens/imgOrdemServicos.jpg" />
                      </image>
                   </ImageView>
                   <Label fx:id="lblTitulo" layoutX="14.0" layoutY="176.0" text="Título">

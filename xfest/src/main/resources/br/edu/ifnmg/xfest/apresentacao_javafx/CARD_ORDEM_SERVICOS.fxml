@@ -19,7 +19,7 @@
          <children>
             <ImageView id="imgCardPerfilPrestador" fitHeight="58.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@icons/user%20(1).png" />
+                  <Image url="@../icons/user%20(1).png" />
                </image>
                <HBox.margin>
                   <Insets right="20.0" />
@@ -36,7 +36,7 @@
             </VBox>
             <ImageView id="imgCardMarcacao" fitHeight="19.0" fitWidth="49.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@icons/save-instagram.png" />
+                  <Image url="@../icons/save-instagram.png" />
                </image>
             </ImageView>
          </children>
