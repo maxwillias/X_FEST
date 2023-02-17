@@ -11,13 +11,13 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<TitledPane animated="false" collapsible="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #f8f8f2;" text="Área de cadastro" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+<TitledPane animated="false" collapsible="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #f8f8f2;" text="Área de cadastro" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
   <content>
     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
          <children>
             <TabPane prefHeight="375.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE">
               <tabs>
-                <Tab text="Dados pessoais">
+                <Tab fx:id="abaDadosPessoais" text="Dados pessoais">
                   <content>
                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                            <children>
@@ -33,40 +33,40 @@
                                           <Font size="14.0" />
                                        </font>
                                     </Label>
-                                    <TextField layoutX="101.0" layoutY="23.0" prefHeight="25.0" prefWidth="210.0" promptText="primeiro nome" />
+                                    <TextField fx:id="inpPrimeiroNome" layoutX="101.0" layoutY="23.0" prefHeight="25.0" prefWidth="210.0" promptText="primeiro nome" />
                                     <Label layoutX="14.0" layoutY="56.0" prefHeight="24.0" prefWidth="78.0" text="Sobrenome">
                                        <font>
                                           <Font size="14.0" />
                                        </font>
                                     </Label>
-                                    <TextField layoutX="101.0" layoutY="56.0" prefHeight="25.0" prefWidth="210.0" promptText="sobrenome" />
+                                    <TextField fx:id="inpSobrenome" layoutX="101.0" layoutY="56.0" prefHeight="25.0" prefWidth="210.0" promptText="sobrenome" />
                                     <Label layoutX="14.0" layoutY="89.0" prefHeight="24.0" prefWidth="78.0" text="CPF">
                                        <font>
                                           <Font size="14.0" />
                                        </font>
                                     </Label>
-                                    <TextField layoutX="101.0" layoutY="89.0" prefHeight="25.0" prefWidth="210.0" promptText="cpf" />
+                                    <TextField fx:id="inpCpfUsuario" layoutX="101.0" layoutY="89.0" prefHeight="25.0" prefWidth="210.0" promptText="cpf" />
                                     <Label layoutX="14.0" layoutY="159.0" prefHeight="24.0" prefWidth="78.0" text="Gênero">
                                        <font>
                                           <Font size="14.0" />
                                        </font>
                                     </Label>
-                                    <ChoiceBox layoutX="102.0" layoutY="159.0" prefHeight="25.0" prefWidth="209.0" />
+                                    <ChoiceBox fx:id="drpGenero" layoutX="102.0" layoutY="159.0" prefHeight="25.0" prefWidth="209.0" />
                                     <Label layoutX="14.0" layoutY="125.0" prefHeight="24.0" prefWidth="78.0" text="Nascimento">
                                        <font>
                                           <Font size="14.0" />
                                        </font>
                                     </Label>
-                                    <TextField layoutX="101.0" layoutY="125.0" prefHeight="25.0" prefWidth="210.0" promptText="data de nascimento" />
-                                    <Button layoutX="18.0" layoutY="239.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="71.0" style="-fx-background-color: #ff5555;" text="Sair" textFill="#f8f8f2" />
-                                    <Button layoutX="240.0" layoutY="239.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="71.0" style="-fx-background-color: #6272a4;" text="Próximo" textFill="#f8f8f2" />
+                                    <TextField fx:id="inpDataNascimentoTxt" layoutX="101.0" layoutY="125.0" prefHeight="25.0" prefWidth="210.0" promptText="data de nascimento" />
+                                    <Button fx:id="btnSair" layoutX="18.0" layoutY="239.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="71.0" style="-fx-background-color: #ff5555;" text="Sair" textFill="#f8f8f2" />
+                                    <Button fx:id="btnProximo" layoutX="240.0" layoutY="239.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="71.0" style="-fx-background-color: #6272a4;" text="Próximo" textFill="#f8f8f2" />
                                  </children>
                               </Pane>
                            </children>
                         </AnchorPane>
                   </content>
                 </Tab>
-                <Tab text="Endereço">
+                <Tab fx:id="abaEnderecoUsuario" text="Endereço">
                   <content>
                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                            <children>
@@ -82,52 +82,52 @@
                                           <Font size="14.0" />
                                        </font>
                                     </Label>
-                                    <TextField layoutX="101.0" layoutY="20.0" prefHeight="25.0" prefWidth="210.0" promptText="rua, avenida..." />
+                                    <TextField fx:id="inpEndLogradouro" layoutX="101.0" layoutY="20.0" prefHeight="25.0" prefWidth="210.0" promptText="rua, avenida..." />
                                     <Label layoutX="14.0" layoutY="53.0" prefHeight="24.0" prefWidth="78.0" text="Número">
                                        <font>
                                           <Font size="14.0" />
                                        </font>
                                     </Label>
-                                    <TextField layoutX="101.0" layoutY="53.0" prefHeight="25.0" prefWidth="210.0" promptText="numero" />
+                                    <TextField fx:id="inpEndNumero" layoutX="101.0" layoutY="53.0" prefHeight="25.0" prefWidth="210.0" promptText="numero" />
                                     <Label layoutX="14.0" layoutY="86.0" prefHeight="24.0" prefWidth="78.0" text="Bairro">
                                        <font>
                                           <Font size="14.0" />
                                        </font>
                                     </Label>
-                                    <TextField layoutX="101.0" layoutY="86.0" prefHeight="25.0" prefWidth="210.0" promptText="bairro" />
+                                    <TextField fx:id="inpEndBairro" layoutX="101.0" layoutY="86.0" prefHeight="25.0" prefWidth="210.0" promptText="bairro" />
                                     <Label layoutX="14.0" layoutY="120.0" prefHeight="24.0" prefWidth="78.0" text="CEP">
                                        <font>
                                           <Font size="14.0" />
                                        </font>
                                     </Label>
-                                    <TextField layoutX="101.0" layoutY="120.0" prefHeight="25.0" prefWidth="210.0" promptText="cep" />
+                                    <TextField fx:id="inpEndCep" layoutX="101.0" layoutY="120.0" prefHeight="25.0" prefWidth="210.0" promptText="cep" />
                                     <Label layoutX="14.0" layoutY="154.0" prefHeight="24.0" prefWidth="78.0" text="Cidade">
                                        <font>
                                           <Font size="14.0" />
                                        </font>
                                     </Label>
-                                    <TextField layoutX="101.0" layoutY="154.0" prefHeight="25.0" prefWidth="210.0" promptText="cidade" />
+                                    <TextField fx:id="inpEndCidade" layoutX="101.0" layoutY="154.0" prefHeight="25.0" prefWidth="210.0" promptText="cidade" />
                                     <Label layoutX="14.0" layoutY="188.0" prefHeight="24.0" prefWidth="78.0" text="UF">
                                        <font>
                                           <Font size="14.0" />
                                        </font>
                                     </Label>
-                                    <ChoiceBox layoutX="102.0" layoutY="188.0" prefHeight="25.0" prefWidth="209.0" />
-                                    <Button layoutX="14.0" layoutY="262.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="71.0" style="-fx-background-color: #ff5555;" text="Sair" textFill="#f8f8f2" />
-                                    <Button layoutX="240.0" layoutY="262.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="71.0" style="-fx-background-color: #6272a4;" text="Próximo" textFill="#f8f8f2" />
+                                    <ChoiceBox fx:id="drpEndDrpUf" layoutX="102.0" layoutY="188.0" prefHeight="25.0" prefWidth="209.0" />
+                                    <Button fx:id="btnEndSair" layoutX="14.0" layoutY="262.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="71.0" style="-fx-background-color: #ff5555;" text="Sair" textFill="#f8f8f2" />
+                                    <Button fx:id="btnEndProximo" layoutX="240.0" layoutY="262.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="71.0" style="-fx-background-color: #6272a4;" text="Próximo" textFill="#f8f8f2" />
                                     <Label layoutX="14.0" layoutY="220.0" prefHeight="24.0" prefWidth="78.0" text="Referência">
                                        <font>
                                           <Font size="14.0" />
                                        </font>
                                     </Label>
-                                    <TextField layoutX="101.0" layoutY="220.0" prefHeight="25.0" prefWidth="210.0" promptText="ponto de referência" />
+                                    <TextField fx:id="inpEndReferencia" layoutX="101.0" layoutY="220.0" prefHeight="25.0" prefWidth="210.0" promptText="ponto de referência" />
                                  </children>
                               </Pane>
                            </children>
                         </AnchorPane>
                   </content>
                 </Tab>
-                  <Tab text="Finalizar cadastro">
+                  <Tab fx:id="abaFinalizarCadastro" text="Finalizar cadastro">
                     <content>
                       <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                            <children>
@@ -143,27 +143,27 @@
                                           <Font size="14.0" />
                                        </font>
                                     </Label>
-                                    <TextField layoutX="124.0" layoutY="20.0" prefHeight="25.0" prefWidth="210.0" promptText="email" />
+                                    <TextField fx:id="inpEmail" layoutX="124.0" layoutY="20.0" prefHeight="25.0" prefWidth="210.0" promptText="email" />
                                     <Label layoutX="14.0" layoutY="53.0" prefHeight="24.0" prefWidth="78.0" text="Telefone">
                                        <font>
                                           <Font size="14.0" />
                                        </font>
                                     </Label>
-                                    <TextField layoutX="124.0" layoutY="53.0" prefHeight="25.0" prefWidth="210.0" promptText="DDD+numero de celular" />
+                                    <TextField fx:id="inpTelefone" layoutX="124.0" layoutY="53.0" prefHeight="25.0" prefWidth="210.0" promptText="DDD+numero de celular" />
                                     <Label layoutX="14.0" layoutY="86.0" prefHeight="24.0" prefWidth="100.0" text="Crie uma senha">
                                        <font>
                                           <Font size="14.0" />
                                        </font>
                                     </Label>
-                                    <TextField layoutX="124.0" layoutY="86.0" prefHeight="25.0" prefWidth="210.0" promptText="senha" />
+                                    <TextField fx:id="inpSenha" layoutX="124.0" layoutY="86.0" prefHeight="25.0" prefWidth="210.0" promptText="senha" />
                                     <Label layoutX="15.0" layoutY="121.0" prefHeight="24.0" prefWidth="108.0" text="Confirme a senha">
                                        <font>
                                           <Font size="14.0" />
                                        </font>
                                     </Label>
-                                    <TextField layoutX="124.0" layoutY="121.0" prefHeight="25.0" prefWidth="210.0" promptText="confirmação de senha" />
-                                    <Button layoutX="18.0" layoutY="196.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="71.0" style="-fx-background-color: #ff5555;" text="Sair" textFill="#f8f8f2" />
-                                    <Button layoutX="246.0" layoutY="196.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="88.0" style="-fx-background-color: #50fa7b;" text="Cadastrar-me" textFill="#f8f8f2" />
+                                    <TextField fx:id="inpConfirmarSenha" layoutX="124.0" layoutY="121.0" prefHeight="25.0" prefWidth="210.0" promptText="confirmação de senha" />
+                                    <Button fx:id="btnFinalizarSair" layoutX="18.0" layoutY="196.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="71.0" style="-fx-background-color: #ff5555;" text="Sair" textFill="#f8f8f2" />
+                                    <Button fx:id="btnCadastrar" layoutX="187.0" layoutY="196.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="147.0" style="-fx-background-color: #50fa7b;" text="Cadastrar-me" textFill="#111111" />
                                  </children>
                               </Pane>
                            </children>
