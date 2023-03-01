@@ -1,5 +1,7 @@
 package br.edu.ifnmg.xfest.apresentacao_javafx;
 
+import org.springframework.stereotype.Service;
+
 import javafx.event.Event;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -8,6 +10,7 @@ import javafx.scene.control.Hyperlink;
 import javafx.scene.layout.AnchorPane;
 import net.rgielen.fxweaver.core.FxmlView;
 
+@Service
 @FxmlView("TELA_LOGIN.fxml")
 public class LoginController extends Controller {
 

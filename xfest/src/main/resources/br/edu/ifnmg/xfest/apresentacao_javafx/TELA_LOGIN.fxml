@@ -14,7 +14,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="viewLogin" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="613.0" prefWidth="961.0" style="-fx-background-color: #6F6AF8;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane fx:id="viewLogin" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="613.0" prefWidth="961.0" style="-fx-background-color: #6F6AF8;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifnmg.xfest.apresentacao_javafx.LoginController">
    <children>
       <VBox alignment="TOP_CENTER" layoutX="655.0" layoutY="6.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="461.0" prefWidth="500.0" spacing="5.0" style="-fx-background-color: FFF;" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
