@@ -2,12 +2,15 @@ package br.edu.ifnmg.xfest.apresentacao_javafx;
 
 import net.rgielen.fxweaver.core.FxmlView;
 
+import org.springframework.stereotype.Service;
+
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.TextField;
 
+@Service
 @FxmlView("CADASTRO_NOVA_ORDEN_SERVICO.fxml")
 public class CadastroNovaOrdemServicoController {
     @FXML
