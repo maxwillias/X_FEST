@@ -18,7 +18,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="564.0" prefWidth="948.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifnmg.xfest.apresentacao_javafx.UsuarioController">
+<BorderPane fx:id="viewUsuario" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="564.0" prefWidth="948.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifnmg.xfest.apresentacao_javafx.UsuarioController">
    <left>
       <VBox alignment="TOP_CENTER" prefHeight="384.0" prefWidth="194.0" BorderPane.alignment="TOP_CENTER">
          <children>
@@ -38,7 +38,7 @@
             <Label text="LOCAL" />
             <VBox alignment="BOTTOM_CENTER" prefHeight="376.0" prefWidth="194.0">
                <children>
-                  <Button fx:id="btnSair" mnemonicParsing="false" text="SAIR" />
+                  <Button fx:id="btnSair" mnemonicParsing="false" onAction="#sairConta" text="SAIR" />
                </children>
             </VBox>
          </children>
