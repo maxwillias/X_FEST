@@ -34,4 +34,8 @@ public class LoginController extends Controller {
         carregarScene(viewLogin, UsuarioController.class);
     }
     
+    @FXML
+    void criarConta(Event event) {
+        carregarScene(viewLogin, CadastroNovoUsuarioController.class);
+    }
 }

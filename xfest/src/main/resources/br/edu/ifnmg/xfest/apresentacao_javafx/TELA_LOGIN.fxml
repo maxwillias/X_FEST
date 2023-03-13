@@ -59,7 +59,7 @@
                   </Button>
                </children>
             </HBox>
-            <Hyperlink fx:id="lblCriarConta" contentDisplay="RIGHT" maxWidth="1.7976931348623157E308" text="Não tem uma conta? Crie uma aqui." underline="true" visited="true" />
+            <Hyperlink fx:id="lblCriarConta" contentDisplay="RIGHT" maxWidth="1.7976931348623157E308" onAction="#criarConta" text="Não tem uma conta? Crie uma aqui." underline="true" visited="true" />
          </children>
          <padding>
             <Insets left="90.0" right="90.0" />

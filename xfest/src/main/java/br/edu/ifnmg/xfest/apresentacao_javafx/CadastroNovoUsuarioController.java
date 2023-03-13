@@ -5,18 +5,23 @@ import net.rgielen.fxweaver.core.FxmlView;
 import org.springframework.stereotype.Service;
 
 import javafx.fxml.FXML;
+import javafx.event.Event;
 import javafx.scene.control.Button;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.TextField;
+import javafx.scene.layout.BorderPane;
 
 @Service
 @FxmlView("CADASTRO_NOVO_USUARIO.fxml")
-public class CadastroNovoUsuarioController {
+public class CadastroNovoUsuarioController extends Controller{
     @FXML
     private Button btnCancelarOS;
 
     @FXML
     private Button btnCancelarOS1;
+
+    @FXML
+    private Button btnVoltar;
 
     @FXML
     private DatePicker dataDataNascimento;
@@ -53,4 +58,12 @@ public class CadastroNovoUsuarioController {
 
     @FXML
     private TextField inpSobrenomeUsuario;
+
+    @FXML
+    private BorderPane viewCadastroNovoUsuario;
+
+    @FXML
+    void voltarTelaLogin(Event event) {
+        carregarScene(viewCadastroNovoUsuario, LoginController.class);
+    }
 }
