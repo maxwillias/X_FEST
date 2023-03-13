@@ -31,7 +31,7 @@ public class LoginController extends Controller {
 
     @FXML
     public void autenticar(Event event) {
-        carregarScene(viewLogin, UsuarioController.class);
+        carregarScene(viewLogin, FeedPrincipalController.class);
     }
     
     @FXML

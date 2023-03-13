@@ -17,7 +17,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="564.0" prefWidth="948.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifnmg.xfest.apresentacao_javafx.FeedPrincipalController">
+<BorderPane fx:id="viewFeedPrincipal" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="564.0" prefWidth="948.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifnmg.xfest.apresentacao_javafx.FeedPrincipalController">
    <left>
       <VBox prefHeight="384.0" prefWidth="194.0" BorderPane.alignment="CENTER" />
    </left>
@@ -45,8 +45,8 @@
             <Pane prefHeight="52.0" prefWidth="34.0" />
             <MenuButton mnemonicParsing="false" prefHeight="26.0" prefWidth="122.0" style="-fx-background-color: white;" text="Criar">
               <items>
-                <MenuItem mnemonicParsing="false" text="Servico" />
-                <MenuItem mnemonicParsing="false" text="Ordem de Servico" />
+                <MenuItem fx:id="miNovoServico" mnemonicParsing="false" onAction="#criarServico" text="Servico" />
+                <MenuItem fx:id="miNovaOrdemServico" mnemonicParsing="false" onAction="#criarOrdemServico" text="Ordem de Servico" />
               </items>
             </MenuButton>
          </children>

@@ -15,7 +15,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1100.0" prefWidth="1205.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifnmg.xfest.apresentacao_javafx.CadastroNovoServicoController">
+<BorderPane fx:id="viewCriarNovoServico" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1100.0" prefWidth="1205.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifnmg.xfest.apresentacao_javafx.CadastroNovoServicoController">
    <left>
       <VBox prefHeight="666.0" prefWidth="263.0" BorderPane.alignment="CENTER">
          <BorderPane.margin>
@@ -28,7 +28,7 @@
    <top>
       <HBox alignment="CENTER_LEFT" prefHeight="52.0" prefWidth="948.0" style="-fx-background-color: #6F6AF8;" BorderPane.alignment="CENTER">
          <children>
-            <Button mnemonicParsing="false" style="-fx-background-color: #6F6AF8;" text="&lt;" textFill="WHITE">
+            <Button fx:id="btnVoltar" mnemonicParsing="false" onAction="#voltarFeedPrincipal" style="-fx-background-color: #6F6AF8;" text="&lt;" textFill="WHITE">
                <font>
                   <Font name="Consolas" size="22.0" />
                </font>

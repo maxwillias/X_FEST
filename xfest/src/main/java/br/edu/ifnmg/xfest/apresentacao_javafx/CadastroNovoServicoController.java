@@ -4,14 +4,16 @@ import net.rgielen.fxweaver.core.FxmlView;
 
 import org.springframework.stereotype.Service;
 
+import javafx.event.Event;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.TextField;
+import javafx.scene.layout.BorderPane;
 
 @Service
 @FxmlView("CADASTRO_NOVO_SERVICO.fxml")
-public class CadastroNovoServicoController {
+public class CadastroNovoServicoController extends Controller{
     @FXML
     private Button btnCancelarOS;
 
@@ -68,4 +70,12 @@ public class CadastroNovoServicoController {
 
     @FXML
     private TextField inpValorServico1;
+
+    @FXML
+    private BorderPane viewCriarNovoServico;
+
+    @FXML
+    void voltarFeedPrincipal(Event event) {
+        carregarScene(viewCriarNovoServico, FeedPrincipalController.class);
+    }
 }
