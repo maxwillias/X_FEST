@@ -34,7 +34,7 @@
             </Label>
             <HBox alignment="CENTER" maxHeight="-Infinity" prefHeight="40.0" prefWidth="557.0" spacing="8.0">
                <children>
-                  <TextField fx:id="inpPesquisa" prefHeight="27.0" prefWidth="538.0" promptText="Pesquia" style="-fx-background-color: white; -fx-border-color: white; -fx-background-radius: 50 rm;" />
+                  <TextField fx:id="inpPesquisa" prefHeight="27.0" prefWidth="538.0" promptText="Pesquisa" style="-fx-background-color: white; -fx-border-color: white; -fx-background-radius: 50 rm;" />
                   <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../icons/search.png" />
