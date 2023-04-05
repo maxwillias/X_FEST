@@ -15,7 +15,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane fx:id="viewCriarNovoServico" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1100.0" prefWidth="1205.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifnmg.xfest.apresentacao_javafx.CadastroNovoServicoController">
+<BorderPane fx:id="viewCriarNovoServico" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifnmg.xfest.apresentacao_javafx.CadastroNovoServicoController">
    <left>
       <VBox prefHeight="666.0" prefWidth="263.0" BorderPane.alignment="CENTER">
          <BorderPane.margin>

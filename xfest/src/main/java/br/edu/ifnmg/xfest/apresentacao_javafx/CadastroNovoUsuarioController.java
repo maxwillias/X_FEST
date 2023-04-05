@@ -4,6 +4,7 @@ import net.rgielen.fxweaver.core.FxmlView;
 
 import org.springframework.stereotype.Service;
 
+import br.edu.ifnmg.xfest.entidades.Usuario;
 import javafx.fxml.FXML;
 import javafx.event.Event;
 import javafx.scene.control.Button;
@@ -51,10 +52,10 @@ public class CadastroNovoUsuarioController extends Controller{
     private TextField inpRuUsuario;
 
     @FXML
-    private TextField inpSenha;
+    private TextField inpLoginEmail;
 
     @FXML
-    private TextField inpSenhaConfirmacao;
+    private TextField inpSenhaCadastro;
 
     @FXML
     private TextField inpSobrenomeUsuario;
@@ -64,6 +65,17 @@ public class CadastroNovoUsuarioController extends Controller{
 
     @FXML
     void voltarTelaLogin(Event event) {
+        
+        Usuario usuario = new Usuario();
+        usuario.setLogin(inpLoginEmail.getText());
+        usuario.setPassword(inpSenhaCadastro.getText());
+
+        
+        
         carregarScene(viewCadastroNovoUsuario, LoginController.class);
+
+
+
+
     }
 }

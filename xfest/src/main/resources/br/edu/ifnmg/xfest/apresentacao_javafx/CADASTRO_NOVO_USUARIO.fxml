@@ -15,7 +15,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane fx:id="viewCadastroNovoUsuario" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="1205.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifnmg.xfest.apresentacao_javafx.CadastroNovoUsuarioController">
+<BorderPane fx:id="viewCadastroNovoUsuario" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifnmg.xfest.apresentacao_javafx.CadastroNovoUsuarioController">
    <left>
       <VBox prefHeight="666.0" prefWidth="263.0" BorderPane.alignment="CENTER">
          <BorderPane.margin>
@@ -62,7 +62,7 @@
          </padding></VBox>
    </right>
    <center>
-      <ScrollPane prefHeight="666.0" prefWidth="796.0" BorderPane.alignment="CENTER">
+      <ScrollPane prefHeight="602.0" prefWidth="672.0" BorderPane.alignment="CENTER">
          <content>
             <AnchorPane prefHeight="989.0" prefWidth="767.0" style="-fx-background-color: white;">
                <children>
@@ -120,16 +120,16 @@
                         <Font size="14.0" />
                      </font>
                   </Label>
-                  <TextField fx:id="inpSenha" layoutX="20.0" layoutY="784.0" prefHeight="26.0" prefWidth="406.0" />
+                  <TextField fx:id="inpLoginEmail" layoutX="20.0" layoutY="784.0" prefHeight="26.0" prefWidth="406.0" />
                   <DatePicker fx:id="dataDataNascimento" layoutX="21.0" layoutY="443.0" />
-                  <Label layoutX="20.0" layoutY="764.0" text="Senha">
+                  <Label layoutX="20.0" layoutY="764.0" text="Login">
                      <font>
                         <Font size="14.0" />
                      </font>
                   </Label>
                   <CheckBox layoutX="20.0" layoutY="900.0" mnemonicParsing="false" text="Concordar com os termos de Política e Privacidade" />
-                  <TextField fx:id="inpSenhaConfirmacao" layoutX="20.0" layoutY="848.0" prefHeight="26.0" prefWidth="406.0" />
-                  <Label layoutX="20.0" layoutY="828.0" text="Confirmar Senha">
+                  <TextField fx:id="inpSenhaCadastro" layoutX="20.0" layoutY="848.0" prefHeight="26.0" prefWidth="406.0" />
+                  <Label layoutX="20.0" layoutY="828.0" text="Senha">
                      <font>
                         <Font size="14.0" />
                      </font>
