@@ -31,7 +31,7 @@ public class Usuario {
     private String password;
 
     @Temporal(TemporalType.TIMESTAMP)
-    private Date date_creation;
+    private Date date_creation = new Date();
 
 
     
