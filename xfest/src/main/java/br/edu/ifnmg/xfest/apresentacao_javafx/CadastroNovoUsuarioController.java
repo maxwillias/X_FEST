@@ -2,9 +2,11 @@ package br.edu.ifnmg.xfest.apresentacao_javafx;
 
 import net.rgielen.fxweaver.core.FxmlView;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import br.edu.ifnmg.xfest.entidades.Usuario;
+import br.edu.ifnmg.xfest.servicos.UsuarioRepositorio;
 import javafx.fxml.FXML;
 import javafx.event.Event;
 import javafx.scene.control.Button;
@@ -15,6 +17,10 @@ import javafx.scene.layout.BorderPane;
 @Service
 @FxmlView("CADASTRO_NOVO_USUARIO.fxml")
 public class CadastroNovoUsuarioController extends Controller{
+
+    @Autowired
+	private UsuarioRepositorio usuario;
+    
     @FXML
     private Button btnCancelarOS;
 
@@ -65,17 +71,22 @@ public class CadastroNovoUsuarioController extends Controller{
 
     @FXML
     void voltarTelaLogin(Event event) {
-        
+        carregarScene(viewCadastroNovoUsuario, LoginController.class);
+    }
+
+
+    @FXML
+    void SalvarUsuario(Event event) {
         Usuario usuario = new Usuario();
         usuario.setLogin(inpLoginEmail.getText());
         usuario.setPassword(inpSenhaCadastro.getText());
-
-        
-        
-        carregarScene(viewCadastroNovoUsuario, LoginController.class);
-
-
-
-
+        this.usuario.Salvar(usuario);
+        carregarScene(viewCadastroNovoUsuario, FeedPrincipalController.class);
     }
+
+    @FXML
+    void voltarTelaLoginCancelar(Event event) {
+        carregarScene(viewCadastroNovoUsuario, LoginController.class);
+    }
+
 }

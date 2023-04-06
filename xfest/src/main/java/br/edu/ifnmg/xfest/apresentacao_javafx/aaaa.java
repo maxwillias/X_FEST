@@ -14,9 +14,9 @@ import org.springframework.context.annotation.ComponentScan;
 import br.edu.ifnmg.xfest.entidades.Usuario;
 import br.edu.ifnmg.xfest.servicos.UsuarioRepositorio;
 
-@EntityScan("br.edu.ifnmg.xfest")
-@ComponentScan("br.edu.ifnmg.xfest")
-@SpringBootApplication
+// @EntityScan("br.edu.ifnmg.xfest")
+// @ComponentScan("br.edu.ifnmg.xfest")
+// @SpringBootApplication
 public class aaaa
 		implements CommandLineRunner {
 
