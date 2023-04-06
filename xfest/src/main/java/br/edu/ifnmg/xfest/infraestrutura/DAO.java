@@ -4,6 +4,10 @@ import java.util.List;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
+import javax.persistence.Query;
+import javax.persistence.criteria.CriteriaBuilder;
+import javax.persistence.criteria.CriteriaQuery;
+import javax.persistence.criteria.Root;
 import javax.transaction.Transactional;
 
 import br.edu.ifnmg.xfest.servicos.Repositorio;
@@ -61,9 +65,20 @@ public class DAO<T>  implements Repositorio<T>{
     }
 
     @Override
+    @Transactional
     public List<T> Buscar(T filtro) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'Buscar'");
+        try {
+            CriteriaBuilder cb = manager.getCriteriaBuilder();
+            CriteriaQuery<T> cr = cb.createQuery(classe);
+            Root<T> root = cr.from(classe);
+            cr.select(root);
+
+            Query consulta = manager.createQuery(cr);
+
+            return consulta.getResultList();
+        } catch(Exception ex){
+            return null;
+        }
     }
     
 }

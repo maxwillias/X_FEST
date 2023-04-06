@@ -43,7 +43,7 @@
                         <Font size="16.0" />
                      </font>
                   </Label>
-                  <PasswordField nodeOrientation="LEFT_TO_RIGHT" prefHeight="35.0" prefWidth="216.0" />
+                  <PasswordField fx:id="inpLoginSenha" nodeOrientation="LEFT_TO_RIGHT" prefHeight="35.0" prefWidth="216.0" />
                   <Hyperlink contentDisplay="RIGHT" maxWidth="1.7976931348623157E308" text="Esqueci minha senha." visible="false" visited="true" />
                </children>
             </VBox>

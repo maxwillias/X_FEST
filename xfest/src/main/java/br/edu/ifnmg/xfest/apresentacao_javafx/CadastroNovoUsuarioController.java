@@ -77,10 +77,15 @@ public class CadastroNovoUsuarioController extends Controller{
 
     @FXML
     void SalvarUsuario(Event event) {
-        Usuario usuario = new Usuario();
-        usuario.setLogin(inpLoginEmail.getText());
-        usuario.setPassword(inpSenhaCadastro.getText());
-        this.usuario.Salvar(usuario);
+        try{
+            Usuario usuario = new Usuario();
+            usuario.setLogin(inpLoginEmail.getText());
+            usuario.setPassword(inpSenhaCadastro.getText());
+            this.usuario.Salvar(usuario);
+        }catch(Exception e){
+            System.out.println(e.toString());
+        }
+        
         carregarScene(viewCadastroNovoUsuario, FeedPrincipalController.class);
     }
 

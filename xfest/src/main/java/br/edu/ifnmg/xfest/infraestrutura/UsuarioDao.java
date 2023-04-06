@@ -1,6 +1,9 @@
 package br.edu.ifnmg.xfest.infraestrutura;
 
+import java.util.List;
+
 import javax.persistence.Query;
+import javax.transaction.Transactional;
 
 import org.springframework.stereotype.Service;
 
@@ -27,6 +30,26 @@ public class UsuarioDao extends DAO<Usuario> implements UsuarioRepositorio {
                 System.out.println(ex.getMessage());
                 return null;
             }
+    }
+
+    @Override
+    @Transactional
+    public List<Usuario> Buscar(Usuario filtro) {
+        try {
+            String jpql = "select u from Usuario u";
+            
+            if(!filtro.getLogin().isEmpty()){
+                jpql += " where u.login like :login and u.password like :password";
+            }
+            Query consulta = getManager().createQuery(jpql);
+            if(!filtro.getLogin().isEmpty()){
+                consulta.setParameter("login", filtro.getLogin());
+                consulta.setParameter("password", filtro.getPassword());
+            }
+            return consulta.getResultList();
+        } catch(Exception ex){
+            return null;
+        }
     }
     
 }
