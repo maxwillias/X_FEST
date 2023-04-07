@@ -14,7 +14,7 @@ import javafx.scene.layout.VBox;
 
 @Service
 @FxmlView("FEED_PRINCIPAL_xFEST.fxml")
-public class FeedPrincipalController extends Controller{
+public class FeedPrincipalController extends Controller {
 
     @FXML
     private VBox Teste;
@@ -30,11 +30,12 @@ public class FeedPrincipalController extends Controller{
 
     @FXML
     private ImageView userImagem;
-    /* @FXML
-    private Avatar userIcon; */
 
     @FXML
     private BorderPane viewFeedPrincipal;
+
+    //private List<Servico> postServicos;
+
 
     @FXML
     void criarOrdemServico(Event event) {
@@ -50,7 +51,4 @@ public class FeedPrincipalController extends Controller{
     void PerfilUsuario(Event event) {
         carregarScene(viewFeedPrincipal, UsuarioController.class);
     }
-
-    
-
 }

@@ -9,7 +9,6 @@ import br.edu.ifnmg.xfest.entidades.Servico;
 import br.edu.ifnmg.xfest.servicos.ServicosRepositorio;
 import javafx.event.Event;
 import javafx.fxml.FXML;
-import javafx.scene.Node;
 import javafx.scene.control.Button;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.TextArea;

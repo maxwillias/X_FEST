@@ -1,10 +1,5 @@
 package br.edu.ifnmg.xfest.infraestrutura;
 
-import java.util.List;
-
-import javax.persistence.Query;
-import javax.transaction.Transactional;
-
 import org.springframework.stereotype.Service;
 
 import br.edu.ifnmg.xfest.entidades.Servico;
