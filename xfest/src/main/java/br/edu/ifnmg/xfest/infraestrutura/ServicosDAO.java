@@ -5,13 +5,16 @@ import java.util.List;
 import javax.persistence.Query;
 import javax.transaction.Transactional;
 
+import org.springframework.stereotype.Service;
+
 import br.edu.ifnmg.xfest.entidades.Servicos;
 import br.edu.ifnmg.xfest.servicos.ServicosRepositorio;
 
+@Service
 public class ServicosDAO extends DAO<Servicos> implements ServicosRepositorio {
 
-    public ServicosDAO(Class<Servicos> classe) {
-        super(classe);
+    public ServicosDAO() {
+        super(Servicos.class);
         //TODO Auto-generated constructor stub
     }
 
