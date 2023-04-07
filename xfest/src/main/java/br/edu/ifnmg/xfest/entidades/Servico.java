@@ -3,13 +3,16 @@ package br.edu.ifnmg.xfest.entidades;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "servicos")
-public class Servicos {
+@Table(name = "servico")
+public class Servico {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long Id;
-    
+
+    @Column(name = "nome_servico")
+    private String nome;
+
     @Column(name = "ValorServico")
     private float valorServico;
     
@@ -31,7 +34,8 @@ public class Servicos {
     public long getId() {
         return Id;
     }
-    public Servicos() {
+    public Servico() {
+        this.nome = "";
         this.valorServico = 0f;
         this.telServico = "";
         this.descricao = "";
@@ -40,8 +44,9 @@ public class Servicos {
         this.fk_Usuario = null;
     }
 
-    public Servicos(float valorServico, String telServico, String descricao, TipoServicos tipoServico,
+    public Servico(String nome, float valorServico, String telServico, String descricao, TipoServicos tipoServico,
             String emailServico, Usuario fk_Usuario) {
+        this.nome = nome;
         this.valorServico = valorServico;
         this.telServico = telServico;
         this.descricao = descricao;
@@ -98,11 +103,19 @@ public class Servicos {
         this.fk_Usuario = fk_Usuario;
     }
 
+    
+    public String getNome() {
+        return nome;
+    }
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
     @Override
     public int hashCode() {
         final int prime = 31;
         int result = 1;
         result = prime * result + (int) (Id ^ (Id >>> 32));
+        result = prime * result + ((nome == null) ? 0 : nome.hashCode());
         result = prime * result + Float.floatToIntBits(valorServico);
         result = prime * result + ((telServico == null) ? 0 : telServico.hashCode());
         result = prime * result + ((descricao == null) ? 0 : descricao.hashCode());
@@ -111,7 +124,6 @@ public class Servicos {
         result = prime * result + ((fk_Usuario == null) ? 0 : fk_Usuario.hashCode());
         return result;
     }
-
     @Override
     public boolean equals(Object obj) {
         if (this == obj)
@@ -120,8 +132,13 @@ public class Servicos {
             return false;
         if (getClass() != obj.getClass())
             return false;
-        Servicos other = (Servicos) obj;
+        Servico other = (Servico) obj;
         if (Id != other.Id)
+            return false;
+        if (nome == null) {
+            if (other.nome != null)
+                return false;
+        } else if (!nome.equals(other.nome))
             return false;
         if (Float.floatToIntBits(valorServico) != Float.floatToIntBits(other.valorServico))
             return false;

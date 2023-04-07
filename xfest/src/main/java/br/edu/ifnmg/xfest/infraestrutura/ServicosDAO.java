@@ -7,14 +7,14 @@ import javax.transaction.Transactional;
 
 import org.springframework.stereotype.Service;
 
-import br.edu.ifnmg.xfest.entidades.Servicos;
+import br.edu.ifnmg.xfest.entidades.Servico;
 import br.edu.ifnmg.xfest.servicos.ServicosRepositorio;
 
 @Service
-public class ServicosDAO extends DAO<Servicos> implements ServicosRepositorio {
+public class ServicosDAO extends DAO<Servico> implements ServicosRepositorio {
 
     public ServicosDAO() {
-        super(Servicos.class);
+        super(Servico.class);
         //TODO Auto-generated constructor stub
     }
 
