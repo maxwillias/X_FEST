@@ -15,7 +15,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane fx:id="viewCriarNovoServico" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifnmg.xfest.apresentacao_javafx.CadastroNovoServicoController">
+<BorderPane fx:id="viewCriarNovoServico" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1100.0" prefWidth="1329.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifnmg.xfest.apresentacao_javafx.CadastroNovoServicoController">
    <left>
       <VBox prefHeight="666.0" prefWidth="263.0" BorderPane.alignment="CENTER">
          <BorderPane.margin>
@@ -71,7 +71,7 @@
                         <Font size="14.0" />
                      </font>
                   </Label>
-                  <Button fx:id="btnCancelarOS" layoutX="284.0" layoutY="986.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="171.0" style="-fx-background-color: red;" text="Cancelar" textFill="WHITE">
+                  <Button fx:id="btnCancelarOS" layoutX="284.0" layoutY="986.0" mnemonicParsing="false" onAction="#CancelarVoltar" prefHeight="37.0" prefWidth="171.0" style="-fx-background-color: red;" text="Cancelar" textFill="WHITE">
                      <font>
                         <Font name="System Bold" size="16.0" />
                      </font>
@@ -79,7 +79,7 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </Button>
-                  <Button fx:id="btnSalvarOS" layoutX="477.0" layoutY="986.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="171.0" style="-fx-background-color: #8CC919;" text="Salvar" textFill="WHITE">
+                  <Button fx:id="btnSalvarOS" layoutX="477.0" layoutY="986.0" mnemonicParsing="false" onAction="#SalvarServico" prefHeight="37.0" prefWidth="171.0" style="-fx-background-color: #8CC919;" text="Salvar" textFill="WHITE">
                      <font>
                         <Font name="System Bold" size="16.0" />
                      </font>
@@ -157,7 +157,7 @@
                      </children>
                   </Pane>
                   <CheckBox fx:id="chkSom1" layoutX="27.0" layoutY="534.0" mnemonicParsing="false" text="Servico de Local? Sim, preencha os  campos de endereço abaixo." />
-                  <TextArea layoutX="29.0" layoutY="220.0" prefHeight="74.0" prefWidth="606.0" />
+                  <TextArea fx:id="txtDescricao" layoutX="29.0" layoutY="220.0" prefHeight="74.0" prefWidth="606.0" />
                   <Label layoutX="29.0" layoutY="304.0" text="Valor (R$)">
                      <font>
                         <Font size="14.0" />
@@ -172,7 +172,7 @@
                         <Insets left="15.0" />
                      </padding>
                   </Label>
-                  <TextField fx:id="inpCidadeOS11" layoutX="30.0" layoutY="852.0" prefHeight="26.0" prefWidth="606.0" />
+                  <TextField fx:id="inpTelServico" layoutX="30.0" layoutY="852.0" prefHeight="26.0" prefWidth="606.0" />
                   <Label layoutX="31.0" layoutY="832.0" text="Número de Telefone">
                      <font>
                         <Font size="14.0" />

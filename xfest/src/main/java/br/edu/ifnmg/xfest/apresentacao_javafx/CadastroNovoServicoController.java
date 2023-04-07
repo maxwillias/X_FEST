@@ -78,4 +78,13 @@ public class CadastroNovoServicoController extends Controller{
     void voltarFeedPrincipal(Event event) {
         carregarScene(viewCriarNovoServico, FeedPrincipalController.class);
     }
+    @FXML
+    void CancelarVoltar(Event event) {
+        
+    }
+
+    @FXML
+    void SalvarServico(Event event) {
+
+    }
 }
