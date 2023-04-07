@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.MenuButton?>
 <?import javafx.scene.control.MenuItem?>
@@ -35,7 +36,7 @@
             <HBox alignment="CENTER" maxHeight="-Infinity" prefHeight="40.0" prefWidth="557.0" spacing="8.0">
                <children>
                   <TextField fx:id="inpPesquisa" prefHeight="27.0" prefWidth="538.0" promptText="Pesquisa" style="-fx-background-color: white; -fx-border-color: white; -fx-background-radius: 50 rm;" />
-                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="imgPesquisa" fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../icons/search.png" />
                      </image>
@@ -49,6 +50,16 @@
                 <MenuItem fx:id="miNovaOrdemServico" mnemonicParsing="false" onAction="#criarOrdemServico" text="Ordem de Servico" />
               </items>
             </MenuButton>
+            <Pane prefHeight="52.0" prefWidth="34.0" />
+            <ImageView fx:id="userImagem" fitHeight="30.0" fitWidth="30.0" onMouseClicked="#PerfilUsuario" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagens/Captura%20de%20tela%20de%202023-04-06%2022-56-36.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <Pane prefHeight="52.0" prefWidth="34.0" />
          </children>
       </HBox>
    </top>

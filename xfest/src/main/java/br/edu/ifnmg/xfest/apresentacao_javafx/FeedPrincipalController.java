@@ -8,6 +8,7 @@ import javafx.event.Event;
 import javafx.fxml.FXML;
 import javafx.scene.control.MenuItem;
 import javafx.scene.control.TextField;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.VBox;
 
@@ -28,6 +29,11 @@ public class FeedPrincipalController extends Controller{
     private MenuItem miNovoServico;
 
     @FXML
+    private ImageView userImagem;
+    /* @FXML
+    private Avatar userIcon; */
+
+    @FXML
     private BorderPane viewFeedPrincipal;
 
     @FXML
@@ -39,5 +45,12 @@ public class FeedPrincipalController extends Controller{
     void criarServico(Event event) {
         carregarScene(viewFeedPrincipal, CadastroNovoServicoController.class);
     }
+
+    @FXML
+    void PerfilUsuario(Event event) {
+        carregarScene(viewFeedPrincipal, UsuarioController.class);
+    }
+
+    
 
 }
