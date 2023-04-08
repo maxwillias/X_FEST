@@ -2,10 +2,14 @@ package br.edu.ifnmg.xfest.apresentacao_javafx;
 
 import net.rgielen.fxweaver.core.FxmlView;
 
+import java.io.IOException;
+
 import org.springframework.stereotype.Service;
 
 import javafx.event.Event;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.control.Label;
 import javafx.scene.control.MenuItem;
 import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
@@ -17,7 +21,7 @@ import javafx.scene.layout.VBox;
 public class FeedPrincipalController extends Controller {
 
     @FXML
-    private VBox Teste;
+    private VBox teste;
 
     @FXML
     private TextField inpPesquisa;
@@ -34,8 +38,22 @@ public class FeedPrincipalController extends Controller {
     @FXML
     private BorderPane viewFeedPrincipal;
 
-    //private List<Servico> postServicos;
-
+    @FXML
+    @Override
+    public void initialize() {
+        for (int i = 0; i < 10; i++) {
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(getClass().getResource("/br/edu/ifnmg/xfest/apresentacao_javafx/CARD_SERVICOS.fxml"));
+            VBox vBox;
+            try {
+                vBox = loader.load();
+                teste.getChildren().add(vBox);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }   
+        }
+        super.initialize();
+    }
 
     @FXML
     void criarOrdemServico(Event event) {
@@ -51,4 +69,7 @@ public class FeedPrincipalController extends Controller {
     void PerfilUsuario(Event event) {
         carregarScene(viewFeedPrincipal, UsuarioController.class);
     }
+
+
+    
 }

@@ -72,7 +72,7 @@
                      <children>
                         <ScrollPane layoutY="3.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="3.0">
                            <content>
-                              <VBox id="vboxServico" fx:id="Teste" prefHeight="565.0" prefWidth="524.0" style="-fx-background-color: white;" />
+                              <VBox id="vboxServico" fx:id="teste" prefHeight="565.0" prefWidth="524.0" style="-fx-background-color: white;" />
                            </content>
                         </ScrollPane>
                      </children>
