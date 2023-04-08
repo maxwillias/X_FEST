@@ -21,7 +21,10 @@ import javafx.scene.layout.VBox;
 public class FeedPrincipalController extends Controller {
 
     @FXML
-    private VBox teste;
+    private VBox vbFeedCardServicos;
+    
+    @FXML
+    private VBox vbFeedCardOrdensServicos;
 
     @FXML
     private TextField inpPesquisa;
@@ -43,11 +46,23 @@ public class FeedPrincipalController extends Controller {
     public void initialize() {
         for (int i = 0; i < 10; i++) {
             FXMLLoader loader = new FXMLLoader();
+            FXMLLoader loaderOS =  new FXMLLoader();
+
             loader.setLocation(getClass().getResource("/br/edu/ifnmg/xfest/apresentacao_javafx/CARD_SERVICOS.fxml"));
+            loaderOS.setLocation(getClass().getResource("/br/edu/ifnmg/xfest/apresentacao_javafx/CARD_ORDEM_SERVICOS.fxml"));
+
+
             VBox vBox;
+            VBox vBoxOS;
+
             try {
                 vBox = loader.load();
-                teste.getChildren().add(vBox);
+                vBoxOS = loaderOS.load();
+
+                vbFeedCardServicos.getChildren().add(vBox);
+                vbFeedCardOrdensServicos.getChildren().add(vBoxOS);
+
+
             } catch (IOException e) {
                 e.printStackTrace();
             }   
