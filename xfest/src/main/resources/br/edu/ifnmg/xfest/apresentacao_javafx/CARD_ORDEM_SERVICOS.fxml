@@ -12,7 +12,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="465.0" prefWidth="721.0" spacing="10.0" style="-fx-background-color: #f1f4f7; -fx-border-style: solid; -fx-border-color: #A9A9A9; -fx-border-radius: 8px;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifnmg.xfest.apresentacao_javafx.CardOrdemServicosController">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="383.0" prefWidth="803.0" spacing="10.0" style="-fx-background-color: #f1f4f7; -fx-border-style: solid; -fx-border-color: #e6e6e6; -fx-border-radius: 8px;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifnmg.xfest.apresentacao_javafx.CardOrdemServicosController">
    <children>
       <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #00FF7F; -fx-background-radius: 8px;">
          <children>
@@ -26,7 +26,7 @@
                         <Insets right="20.0" />
                      </HBox.margin>
                   </ImageView>
-                  <VBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="579.0" spacing="5.0">
+                  <VBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="699.0" spacing="5.0">
                      <children>
                         <Label id="lblCardNomeServico" fx:id="lblNomeOS" prefHeight="22.0" prefWidth="490.0" text="Nome da Ordem de Serviço" textFill="#545454">
                            <font>
@@ -84,7 +84,7 @@
             <Insets left="20.0" right="20.0" />
          </padding>
       </VBox>
-      <HBox alignment="BOTTOM_LEFT" prefHeight="170.0" prefWidth="559.0">
+      <HBox alignment="BOTTOM_LEFT" prefHeight="101.0" prefWidth="801.0">
          <children>
             <VBox prefHeight="170.0" prefWidth="230.0">
                <children>
@@ -98,8 +98,8 @@
                   <Label id="lblCardValorServico" prefHeight="18.0" prefWidth="138.0" text="Floricultura" />
                </children>
             </VBox>
-            <Pane prefHeight="170.0" prefWidth="307.0" />
-            <Button id="btnContatarServico" fx:id="btnCadidatarOS" mnemonicParsing="false" prefHeight="48.0" prefWidth="155.0" style="-fx-background-color: #00FF7F;" text="Candidatar" textFill="#545454">
+            <Pane prefHeight="95.0" prefWidth="350.0" />
+            <Button id="btnContatarServico" fx:id="btnCadidatarOS" mnemonicParsing="false" prefHeight="48.0" prefWidth="189.0" style="-fx-background-color: #00FF7F;" text="Candidatar-se" textFill="#545454">
                <font>
                   <Font name="System Bold" size="18.0" />
                </font>

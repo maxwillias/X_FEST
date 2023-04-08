@@ -125,7 +125,7 @@
                </children>
             </VBox>
             <Pane prefHeight="124.0" prefWidth="277.0" />
-            <Button id="btnContatarServico" fx:id="btnContratarServico" mnemonicParsing="false" prefHeight="48.0" prefWidth="212.0" style="-fx-background-color: #6F6AF8;" text="Ver Serviço" textFill="#fcfcfc">
+            <Button id="btnContatarServico" fx:id="btnContratarServico" mnemonicParsing="false" prefHeight="48.0" prefWidth="212.0" style="-fx-background-color: #6F6AF8;" text="Contatar" textFill="#fcfcfc">
                <font>
                   <Font name="System Bold" size="18.0" />
                </font>

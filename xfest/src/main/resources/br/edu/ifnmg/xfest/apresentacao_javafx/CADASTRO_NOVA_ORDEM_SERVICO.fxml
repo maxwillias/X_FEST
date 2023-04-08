@@ -15,7 +15,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane fx:id="viewCriarNovaOrdemServico" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/20" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifnmg.xfest.apresentacao_javafx.CadastroNovaOrdemServicoController">
+<BorderPane fx:id="viewCriarNovaOrdemServico" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifnmg.xfest.apresentacao_javafx.CadastroNovaOrdemServicoController">
    <left>
       <VBox prefHeight="666.0" prefWidth="263.0" BorderPane.alignment="CENTER">
          <BorderPane.margin>
@@ -56,7 +56,7 @@
       </HBox>
    </top>
    <right>
-      <VBox prefHeight="666.0" prefWidth="270.0" BorderPane.alignment="CENTER">
+      <VBox prefHeight="777.0" prefWidth="339.0" BorderPane.alignment="CENTER">
          <padding>
             <Insets left="15.0" top="30.0" />
          </padding></VBox>
@@ -87,7 +87,7 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </Button>
-                  <Pane layoutX="-1.0" prefHeight="124.0" prefWidth="787.0" style="-fx-background-color: #F9D8B2;">
+                  <Pane layoutX="-1.0" prefHeight="124.0" prefWidth="787.0" style="-fx-background-color: #00FA9A;">
                      <children>
                         <Label layoutX="14.0" layoutY="48.0" prefHeight="28.0" prefWidth="570.0" text="NOVA ORDEM SERVIÇO" textAlignment="RIGHT" textFill="#404040">
                            <font>
@@ -96,7 +96,7 @@
                         </Label>
                      </children>
                   </Pane>
-                  <TextField fx:id="inpNomeOS" layoutX="21.0" layoutY="205.0" prefHeight="26.0" prefWidth="623.0" />
+                  <TextField fx:id="inpNomeOS" layoutX="21.0" layoutY="205.0" prefHeight="30.0" prefWidth="623.0" />
                   <Label layoutX="21.0" layoutY="243.0" text="Descrição">
                      <font>
                         <Font size="14.0" />
@@ -107,14 +107,14 @@
                         <Font size="14.0" />
                      </font>
                   </Label>
-                  <TextField fx:id="inpDescricaoOS" layoutX="21.0" layoutY="263.0" prefHeight="26.0" prefWidth="623.0" />
-                  <TextField fx:id="inpTamanhoEvento" layoutX="21.0" layoutY="323.0" prefHeight="26.0" prefWidth="623.0" />
+                  <TextField fx:id="inpDescricaoOS" layoutX="21.0" layoutY="263.0" prefHeight="30.0" prefWidth="623.0" />
+                  <TextField fx:id="inpTamanhoEvento" layoutX="21.0" layoutY="323.0" prefHeight="30.0" prefWidth="623.0" />
                   <Label layoutX="21.0" layoutY="362.0" text="Número Contato">
                      <font>
                         <Font size="14.0" />
                      </font>
                   </Label>
-                  <TextField fx:id="inpContatoOS" layoutX="21.0" layoutY="382.0" prefHeight="26.0" prefWidth="623.0" />
+                  <TextField fx:id="inpContatoOS" layoutX="21.0" layoutY="382.0" prefHeight="30.0" prefWidth="623.0" />
                   <Label layoutX="21.0" layoutY="422.0" text="Data Evento">
                      <font>
                         <Font size="14.0" />
@@ -122,7 +122,7 @@
                   </Label>
                   <DatePicker fx:id="dataDataOS" layoutX="21.0" layoutY="443.0" />
                   <CheckBox fx:id="chkSom" layoutX="33.0" layoutY="773.0" mnemonicParsing="false" text="Som" />
-                  <Label layoutX="20.0" layoutY="723.0" prefHeight="20.0" prefWidth="618.0" style="-fx-background-color: #F9D8B2;" text="Serviços Necessários" textAlignment="CENTER">
+                  <Label layoutX="20.0" layoutY="723.0" prefHeight="31.0" prefWidth="767.0" style="-fx-background-color: #00FA9A;" text="Serviços Necessários" textAlignment="CENTER">
                      <font>
                         <Font name="System Bold" size="14.0" />
                      </font>
@@ -136,39 +136,39 @@
                   <CheckBox fx:id="chkDecoracao" layoutX="32.0" layoutY="827.0" mnemonicParsing="false" text="Decoração" />
                   <CheckBox fx:id="chkBuffet" layoutX="31.0" layoutY="851.0" mnemonicParsing="false" text="Buffet" />
                   <CheckBox fx:id="chkLocal" layoutX="287.0" layoutY="842.0" mnemonicParsing="false" text="Local" />
-                  <Pane layoutX="15.0" layoutY="478.0" prefHeight="237.0" prefWidth="627.0">
+                  <Pane layoutX="15.0" layoutY="478.0" prefHeight="237.0" prefWidth="774.0">
                      <children>
-                        <TextField fx:id="inpRuaOS1" layoutX="10.0" layoutY="66.0" prefHeight="26.0" prefWidth="406.0" />
+                        <TextField fx:id="inpRuaOS1" layoutX="10.0" layoutY="66.0" prefHeight="30.0" prefWidth="406.0" />
                         <Label layoutX="14.0" layoutY="40.0" text="Rua">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </Label>
-                        <TextField fx:id="inpBairroOS1" layoutX="10.0" layoutY="129.0" prefHeight="26.0" prefWidth="406.0" />
-                        <Label layoutX="17.0" layoutY="96.0" text="Bairro">
+                        <TextField fx:id="inpBairroOS1" layoutX="10.0" layoutY="129.0" prefHeight="30.0" prefWidth="406.0" />
+                        <Label layoutX="17.0" layoutY="105.0" text="Bairro">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </Label>
-                        <TextField fx:id="inpCidadeOS1" layoutX="10.0" layoutY="186.0" prefHeight="26.0" prefWidth="406.0" />
+                        <TextField fx:id="inpCidadeOS1" layoutX="10.0" layoutY="186.0" prefHeight="30.0" prefWidth="406.0" />
                         <Label layoutX="14.0" layoutY="166.0" text="Cidade">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </Label>
-                        <TextField fx:id="inpNumeroLocalOS1" layoutX="463.0" layoutY="63.0" prefHeight="26.0" prefWidth="90.0" />
+                        <TextField fx:id="inpNumeroLocalOS1" layoutX="463.0" layoutY="63.0" prefHeight="30.0" prefWidth="90.0" />
                         <Label layoutX="463.0" layoutY="40.0" text="Número">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </Label>
-                        <TextField fx:id="inpEstadoOS1" layoutX="463.0" layoutY="126.0" prefHeight="26.0" prefWidth="90.0" />
+                        <TextField fx:id="inpEstadoOS1" layoutX="463.0" layoutY="126.0" prefHeight="30.0" prefWidth="90.0" />
                         <Label layoutX="463.0" layoutY="103.0" text="UF">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </Label>
-                        <Label layoutX="1.0" layoutY="4.0" prefHeight="20.0" prefWidth="626.0" style="-fx-background-color: #F9D8B2;" text="Endereço Evento" textAlignment="CENTER">
+                        <Label layoutX="1.0" layoutY="4.0" prefHeight="30.0" prefWidth="768.0" style="-fx-background-color: #00FA9A;" text="Endereço Evento" textAlignment="CENTER">
                            <font>
                               <Font name="System Bold" size="14.0" />
                            </font>

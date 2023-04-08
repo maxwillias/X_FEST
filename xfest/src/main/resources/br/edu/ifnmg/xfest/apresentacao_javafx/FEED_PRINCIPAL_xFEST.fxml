@@ -72,7 +72,7 @@
                      <children>
                         <ScrollPane layoutY="3.0" style="-fx-background-color: #FFF;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="3.0">
                            <content>
-                              <VBox id="vboxServico" fx:id="vbFeedCardServicos" alignment="CENTER" prefHeight="636.0" spacing="20.0" style="-fx-background-color: white;" />
+                              <VBox id="vboxServico" fx:id="vbFeedCardServicos" alignment="CENTER" prefHeight="636.0" spacing="20.0" style="-fx-background-color: #FFF;" />
                            </content>
                            <padding>
                               <Insets top="20.0" />
@@ -91,7 +91,7 @@
                               <VBox id="vboxOrdemServico" fx:id="vbFeedCardOrdensServicos" prefHeight="373.0" spacing="20.0" style="-fx-background-color: #FFF;" />
                            </content>
                            <padding>
-                              <Insets left="20.0" top="20.0" />
+                              <Insets top="20.0" />
                            </padding>
                         </ScrollPane>
                      </children></AnchorPane>
