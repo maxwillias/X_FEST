@@ -74,6 +74,9 @@
                            <content>
                               <VBox id="vboxServico" fx:id="vbFeedCardServicos" alignment="CENTER" prefHeight="636.0" spacing="20.0" style="-fx-background-color: white;" />
                            </content>
+                           <padding>
+                              <Insets top="20.0" />
+                           </padding>
                         </ScrollPane>
                      </children>
                   </AnchorPane>
@@ -88,7 +91,7 @@
                               <VBox id="vboxOrdemServico" fx:id="vbFeedCardOrdensServicos" prefHeight="373.0" spacing="20.0" style="-fx-background-color: #FFF;" />
                            </content>
                            <padding>
-                              <Insets left="20.0" />
+                              <Insets left="20.0" top="20.0" />
                            </padding>
                         </ScrollPane>
                      </children></AnchorPane>
