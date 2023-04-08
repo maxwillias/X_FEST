@@ -18,9 +18,9 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane fx:id="viewFeedPrincipal" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifnmg.xfest.apresentacao_javafx.FeedPrincipalController">
+<BorderPane fx:id="viewFeedPrincipal" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="751.0" prefWidth="1183.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifnmg.xfest.apresentacao_javafx.FeedPrincipalController">
    <left>
-      <VBox prefHeight="384.0" prefWidth="194.0" BorderPane.alignment="CENTER" />
+      <VBox prefHeight="699.0" prefWidth="189.0" style="-fx-background-color: #FFF;" BorderPane.alignment="CENTER" />
    </left>
    <top>
       <HBox alignment="CENTER_LEFT" prefHeight="52.0" prefWidth="948.0" style="-fx-background-color: #6F6AF8;" BorderPane.alignment="CENTER">
@@ -64,15 +64,15 @@
       </HBox>
    </top>
    <center>
-      <TabPane prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+      <TabPane prefHeight="699.0" prefWidth="787.0" style="-fx-background-color: #FFF;" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
         <tabs>
           <Tab text="Serviços">
             <content>
-              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+              <AnchorPane minHeight="0.0" minWidth="0.0" style="-fx-background-color: #FFF;">
                      <children>
-                        <ScrollPane layoutY="3.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="3.0">
+                        <ScrollPane layoutY="3.0" style="-fx-background-color: #FFF;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="3.0">
                            <content>
-                              <VBox id="vboxServico" fx:id="vbFeedCardServicos" prefHeight="565.0" prefWidth="524.0" style="-fx-background-color: white;" />
+                              <VBox id="vboxServico" fx:id="vbFeedCardServicos" alignment="CENTER" prefHeight="636.0" spacing="20.0" style="-fx-background-color: white;" />
                            </content>
                         </ScrollPane>
                      </children>
@@ -81,12 +81,15 @@
           </Tab>
           <Tab text="Ordens de Serviços">
             <content>
-              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: white;">
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #FFF;">
                      <children>
-                        <ScrollPane prefHeight="470.0" prefWidth="533.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-2.0" AnchorPane.topAnchor="0.0">
+                        <ScrollPane prefHeight="470.0" style="-fx-background-color: #FFF;" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-2.0" AnchorPane.topAnchor="0.0">
                            <content>
-                              <VBox id="vboxOrdemServico" fx:id="vbFeedCardOrdensServicos" prefHeight="373.0" prefWidth="535.0" />
+                              <VBox id="vboxOrdemServico" fx:id="vbFeedCardOrdensServicos" prefHeight="373.0" spacing="20.0" style="-fx-background-color: #FFF;" />
                            </content>
+                           <padding>
+                              <Insets left="20.0" />
+                           </padding>
                         </ScrollPane>
                      </children></AnchorPane>
             </content>
@@ -98,6 +101,6 @@
       </TabPane>
    </center>
    <right>
-      <VBox prefHeight="522.0" prefWidth="223.0" BorderPane.alignment="CENTER" />
+      <VBox prefHeight="699.0" prefWidth="134.0" style="-fx-background-color: #FFF;" BorderPane.alignment="CENTER" />
    </right>
 </BorderPane>
